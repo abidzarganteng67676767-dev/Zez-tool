@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Runner</title>
+</head>
+
+<body>
+
+<h1>HTML Code Runner</h1>
+
+<textarea id="kode" rows="10" cols="40">
+</textarea>
+
+<br><br>
+
+<button onclick="runCode()">RUN ▶</button>
+
+<h2>Hasil:</h2>
+
+<iframe id="hasil"></iframe>
+
+<script>
+function runCode() {
+    let kode = document.getElementById("kode").value;
+    document.getElementById("hasil").srcdoc = kode;
+}
+</script>
+
+</body>
+</html>
+
+<a href=halaman2.html>
+  <button>x</button>
+</a>
